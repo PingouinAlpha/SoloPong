@@ -8,49 +8,55 @@ body {
     transition: background-color 1s ease;
     animation: colorChange 8s infinite;
 }
-
 @keyframes colorChange {
     0% {
         background-color: #51ff00;
     }
-
     25% {
         background-color: #00d4ff;
     }
-
     50% {
         background-color: #ff00ea;
     }
-
     75% {
         background-color: #ffea00;
     }
-
     100% {
         background-color: #51ff00;
     }
 }
-
 h1 {
-    color: #ff69b4;
+    color: #000000;
     font-weight: bold;
     font-size: 3em;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
 }
-
 canvas {
     border: 4px solid #000;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     margin: 20px 0;
-    background-image: url("../chad.png");
+    background-color: black;
     background-size: cover;
 }
-
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+#moveLeft, #moveRight {
+    font-size: 32px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
+    background-color: #000;
     border: none;
     padding: 15px 30px;
     margin: 10px 5px;
@@ -63,42 +69,14 @@ button {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
-
 button:active {
     transform: translateY(-1px);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-
-#start {
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-}
-
-#start:hover {
-    background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
-}
-
-#pause {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-#pause:hover {
-    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
-}
-
-#reset {
-    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-}
-
-#reset:hover {
-    background: linear-gradient(135deg, #fee140 0%, #fa709a 100%);
-}
-
 #temps {
     font-size: 24px;
     font-weight: bold;
